@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Dhruv Garg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dhruv Garg's personal website.">
     <meta name="author" content="Dhruv Garg">
@@ -14,9 +14,16 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+			.hero-unit {
+				padding: 30px;
+			}
+			p {
+				font-size: 15px;
+				line-height: 22px;
+			}
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-
+		<link href="css/docs.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,21 +36,21 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
 
-  <body>
+  <body data-spy="scroll">
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+	        <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
+							<li><a href="#"><span style="font-size: 16px; color: white;">Dhruv Garg</span></a>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#interests">Interests</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -55,12 +62,128 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1>Hi, welcome!</h1>
+				<br>
+        <p>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!
+				</p>
       </div>
 
-      <hr>
+			<section id="projects">
+				<div class="page-header">
+					<h1>
+						Projects
+						<small>Things that I have made, am making, and want to make.</small>
+					</h1>
+				</div>
+				<div class="subnav">
+					<ul class="nav nav-pills">
+						<li><a href="#beam">Beam</a></li>
+						<li><a href="#thesis">Relevance Ranking</a></li>
+						<li><a href="#google">Anomaly Analysis</a></li>
+						<li><a href="#kayak">Mobile Analytics</a></li>
+						<li><a href="#pokerbot">Pokerbot</a></li>
+						<li><a href="#apple">Cloud Search</a></li>
+						<li><a href="#medialab">Re-thinking Calendars</a></li>
+						<li><a href="#vmware">Debugging Flex Apps</a></li>
+						<li><a href="#vmware">Surgical Simulators</a></li>
+						<li><a href="#vmware">Clubnest</a></li>
+					</ul>
+				</div>
+				<br>
+				<div>
+					<h3>Beam</h3>
+				<div>
+				<div>
+					<h3>Relevance Ranking for Real-time Sharing</h3>
+				<div>
+				<div>
+					<h3>Anomaly Analysis at Google (Youtube)</h3>
+				</div>
+				<div>
+					<h3>Mobile Analytics at Kayak</h3>
+				</div>
+				<div>
+					<h3>Building a Pokerbot</h3>
+				</div>
+				<div>
+					<h3>Personal Cloud Search at Apple (MobileMe, now iCloud)</h3>
+				</div>
+				<div>
+					<h3>Re-thinking Calendars at MIT Media Lab</h3>
+				</div>
+				<div>
+					<h3>Building a Debug Tool for Flex Apps at VMware</h3>
+				</div>
+				<div>
+					<h3>Researching Surgical Simulators at Stanford</h3>
+				</div>
+				<div>
+					<h3>Clubnest - My first startup</h3>
+				</div>
+		 	</section>
+			
+			<section id="interests">
+				<div class="page-header">
+					<h1>
+						Interests
+						<small>Things that I do when I am not building things.</small>
+					</h1>
+				</div>
+				<div class="subnav">
+					<ul class="nav nav-pills">
+						<li><a href="#romulus">Seed Stage Funding</a></li>
+						<li><a href="#cards">Card Games</a></li>
+						<li><a href="#sports">Sports</a></li>
+						<li><a href="#music">Audiophile</a></li>
+						<li><a href="#vacation">Vacationing</a></li>
+						<li><a href="#tv">TV Shows</a></li>
+						<li><a href="#pokerbot">Reading</a></li>
+					</ul>
+				</div>
+				<br>
+				<div>
+					<h3>Seed Stage Funding</h3>
+				<div>
+				<div>
+					<h3>Playing Card Games</h3>
+				<div>
+				<div>
+					<h3>Playing Sports</h3>
+				<div>
+				<div>
+					<h3>Being an Audiophile</h3>
+				</div>
+				<div>
+					<h3>Vacationing</h3>
+				</div>
+				<div>
+					<h3>Watching TV</h3>
+				</div>
+				<div>
+					<h3>Reading</h3>
+				</div>
+		 	</section>
+		
+			<section id="contact">
+				<div class="page-header">
+					<h1>
+						Contact
+						<small>Hi.</small>
+					</h1>
+				</div>
+				<p>
+					I share stuff that catches my eye on Twitter (<a href="https://twitter.com/#!/drgarg">@drgarg</a>), push code on Github (<a href="https://github.com/dhruvg">dhruvg</a>), and try to act professional on LinkedIn (<a href="http://www.linkedin.com/in/dhruvgarg">dhruvgarg</a>). If you are into fancy resumes, here's <a href="docs/resume.pdf">mine</a>. I check my email pretty often, so feel free to get in touch at dhruv.garg at gmail dot com.
+				</p>
+				<br>
+				<div>
+					<a href="https://twitter.com/drgarg" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @drgarg</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<iframe src="github-btn.html?user=dhruvg&type=follow&size=large"
+					  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="30px"></iframe>
+				</div>
+		 	</section>
+      
+			<hr>
 
       <footer>
         <p>&copy; Dhruv Garg 2012</p>
@@ -84,6 +207,5 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-
   </body>
 </html>
