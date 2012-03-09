@@ -11,16 +11,30 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 60px;
         padding-bottom: 40px;
       }
 			.hero-unit {
 				padding: 30px;
-				height:;
+				overflow: auto;
 			}
 			p {
 				font-size: 15px;
 				line-height: 22px;
+			}
+			.item {
+				clear: left;
+				overflow: auto;
+				padding-bottom: 10px;
+			}
+			.item img {
+				float: left; 
+				padding-right: 15px; 
+			}
+			section hr {
+				margin: 10px 0;
+			}
+			section .subnav {
+				height: 100%;
 			}
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -39,7 +53,7 @@
 
   <body data-spy="scroll">
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
       <div class="navbar-inner">
 	        <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -65,7 +79,7 @@
       <div class="hero-unit">
         <h1>Hi, welcome!</h1>
 				<br>
-        <p style="height: 260px;"><img src="img/pf.jpg" style="float: left; padding-right: 20px;" height="302px" width="256px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!
+        <p><img src="img/pf.jpg" style="float: left; padding-right: 20px;" height="302px" width="256px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and trying to live in the present!
 				</p>
       </div>
 
@@ -91,35 +105,94 @@
 					</ul>
 				</div>
 				<br>
-				<div id="beam">
-					<h3>Beam</h3>
-				<div>
-				<div id="thesis">
-					<h3>Relevance Ranking for Real-time Sharing</h3>
-				<div>
-				<div id="google">
-					<h3>Anomaly Analysis at Google (Youtube)</h3>
+				<div id="beam" class="item">
+					<h3>
+						Beam
+						<small>Aug 2011 - Present</small>
+					</h3>
+					<br>
+					<p><img src="img/beam_logo.png" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="kayak">
-					<h3>Mobile Analytics at Kayak</h3>
+				<hr>
+				<div id="thesis" class="item">
+					<h3>
+						Relevance Ranking for Tag-based Sharing
+						<small>Sep 2011 - Present</small>
+					</h3>
+					<br>
+					<p>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="pokerbot">
-					<h3>Building a Pokerbot</h3>
+				<hr>
+				<div id="google" class="item">
+					<h3>
+						Anomaly Analysis at Google (Youtube)
+						<small>May 2011 - Aug 2011</small>
+					</h3>
+					<br>
+					<p><img src="img/youtube_logo.png" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="apple">
-					<h3>Personal Cloud Search at Apple (MobileMe, now iCloud)</h3>
+				<hr>
+				<div id="kayak" class="item">
+					<h3>
+						Mobile Analytics at Kayak
+						<small>Jan 2011 - Feb 2011</small>
+					</h3>
+					<br>
+					<p><img src="img/kayak_logo.jpeg" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="medialab">
-					<h3>Re-thinking Calendars at MIT Media Lab</h3>
+				<hr>
+				<div id="pokerbot" class="item">
+					<h3>
+						Building a Pokerbot
+						<small>Jan 2011 - Feb 2011</small>
+					</h3>
+					<br>
+					<p>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="vmware">
-					<h3>Building a Debug Tool for Flex Apps at VMware</h3>
+				<hr>
+				<div id="apple" class="item">
+					<h3>
+						Personal Cloud Search at Apple (MobileMe, now iCloud)
+						<small>May 2010 - Aug 2010</small>
+					</h3>
+					<br>
+					<p><img src="img/apple_icloud_logo.jpg" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="stanford">
-					<h3>Researching Surgical Simulators at Stanford</h3>
+				<hr>
+				<div id="medialab" class="item">
+					<h3>
+						Re-thinking Calendars at MIT Media Lab
+						<small>Dec 2008 - Oct 2009</small>
+					</h3>
+					<br>
+					<p><img src="img/syn_neurobio_logo.jpg" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
-				<div id="clubnest">
-					<h3>Clubnest - My first startup</h3>
+				<hr>
+				<div id="vmware" class="item">
+					<h3>
+						Building a Debug Tool for Flex Apps at VMware
+						<small>May 2009 - Aug 2009</small>
+					</h3>
+					<br>
+					<p><img src="img/vmware_logo.png" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
+				</div>
+				<hr>
+				<div id="stanford" class="item">
+					<h3>
+						Researching Surgical Simulators at Stanford
+						<small>Feb 2007 - Feb 2008</small>
+					</h3>
+					<br>
+					<p><img src="img/stanford_research.jpg" width="200px"/>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
+				</div>
+				<hr>
+				<div id="clubnest" class="item">
+					<h3>
+						Clubnest - My first startup
+						<small>Feb 2005 - Aug 2008</small>
+					</h3>
+					<br>
+					<p>I'm Dhruv. I'm currently a senior at MIT studying computer science. I like to build things that make my life better and I have realized that, for me, writing code is the most resourceful way to do that. I like to believe the world has no rules, and the only rules are the personal values you choose to live by. For me, these are giving 110% to whatever I do, helping people whenever I can, being open to new, potentially unconventional, things, and enjoying the ride!</p>
 				</div>
 		 	</section>
 			
@@ -136,32 +209,59 @@
 						<li><a href="#cards">Card Games</a></li>
 						<li><a href="#sports">Sports</a></li>
 						<li><a href="#music">Audiophile</a></li>
-						<li><a href="#vacation">Vacationing</a></li>
+						<li><a href="#vacation">Traveling</a></li>
+						<li><a href="#momsart">Evangelizing Mom's Art</a></li>
 						<li><a href="#tv">TV Shows</a></li>
 						<li><a href="#reading">Reading</a></li>
 					</ul>
 				</div>
 				<br>
-				<div id="romulus">
+				<div id="romulus" class="item">
 					<h3>Seed Stage Funding</h3>
-				<div>
-				<div id="cards">
+					<br>
+					<p><img src="img/romulus_logo.png" style="padding-bottom: 70px;" width="200px"/>I have been involved with <a href="http://romuluscap.com/">Romulus Capital</a> since 2010. It is a seed stage venture capital firm which was founded by a good friend of mine, Krishna Gupta. I joined it when it had made two investments; now we are at 11 <a href="http://romuluscap.com/portfolio.html">investments</a>. As a part-time associate, I find investment opportunities at MIT and work with other associates to find opportunities in the New England area. I also work especially closely with <a href="http://www.zigfu.com">Zigfu</a> (YC S'11), a startup in the motion-controlled app space. In the process, I have enjoyed meeting a ton of smart VCs, entrepreneurs, and engineers. Most of all, I feel fortunate to be a part of the diverse, successful, and fun <a href="http://romuluscap.com/team.html">Romulus Team</a>; these are qualities I hope to emulate in teams I work with in the future.</p>
+				</div>
+				<hr>
+				<div id="cards" class="item">
 					<h3>Playing Card Games</h3>
-				<div>
-				<div id="sports">
+					<br>
+					<p>I grew up playing Bicycle playing cards. Whenever I visited India to meet the family, cards were a pretty common pass time. In high school, I got introduced and addicted to <a href="http://en.wikipedia.org/wiki/Texas_hold_'em">Texas Hold'em</a> (poker). A group of ~6 of us played poker every Friday evening for several hours straight. I started playing online but couldn't play with real money. So I got 1st place in two 5000+ person "freeroll" tournaments, which required no investment and paid the 1st place winner real money (it was the site's way of getting new paying users). I like to think my two wins were pure skill, but there was a LOT of luck involved. In summer 2011, I was living with three people (Facebook/Google interns at the time) and was introduced to <a href="http://en.wikipedia.org/wiki/Contract_bridge">Bridge</a>. We reached a phase where all 4 of us came back from work every night and played Bridge for hours in a row till bedtime. I didn't get many chances to play Bridge after the summer, but it's something I want to get better at.</p>
+				</div>
+				<hr>
+				<div id="sports" class="item">
 					<h3>Playing Sports</h3>
-				<div>
-				<div id="music">
+					<br>
+					<p>I started playing basketball in 3rd grade and really enjoy playing it to this day. My favorite team used to be the <a href="http://www.nba.com/pistons/index_main.html">Detroit Pistons</a> under <a href="http://en.wikipedia.org/wiki/Larry_Brown_(basketball)">Larry Brown</a>; my interest in them faded when they traded much of their starting lineup and Larry Brown left. Before that, however, I loved watching the Pistons because they had no "star" player like LeBron James or Kobe Bryant. They had fantastic team players and unbeatable chemistry. It was fun to watch. <b>Another fun fact:</b> I have also volunteered as a K-5 basketball coach at my local YMCA for all four years in high school. Teaching kids basketball and the importance of teamwork has been one of the my most rewarding experiences. At MIT, I discovered squash and really enjoy the intensity and speed it demands. I am also taking advantage of my (relatively more) free time senior year to explore Ultimate Frisbee and Water Polo through my fraternity's intramural teams.</p>
+				</div>
+				<hr>
+				<div id="music" class="item">
 					<h3>Being an Audiophile</h3>
+					<br>
+					<p>If I am working on my laptop, chances are I am also listening to Pandora with my Sennheiser HD headphones. Pandora is just amazing. I have discovered so much cool, unconventional, music through it. Generally, I enjoy rock (RHCP, Coldplay, Weezer), instrumental (EITS, Mute Math, Cinema 33, Album Leaf, Emancipator), and trance (AVB, Gareth Emery, Above & Beyond). I say "generally", because my musical tastes go through phases; my <a href="http://www.pandora.com/#!/profile/activity/dhruv.garg">upvotes</a> on Pandora span across many different genres.</p>
 				</div>
-				<div id="vacation">
-					<h3>Vacationing</h3>
+				<hr>
+				<div id="vacation" class="item">
+					<h3>Traveling</h3>
+					<br>
+					<p><img src="img/travel.jpg" width="200px"/>While I don't get to travel as much as I'd like (and I have passed up awesome travel opportunities to work on <a href="#projects">projects</a>), I have been fortunate to go a few cool places. Last year, I went with to Puerto Vallarta, Mexico with my fraternity pledge class (see picture on left) for ~ week. By far one of the best vacations I've had in college. I have also traveled to Rome, Florence, Pisa, and Venice with my parents; Florence is one of the most beautiful cities in the world and I hope to re-visit it sometime with a nature-loving group. This year, I am planning to go to San Juan, Puerto Rico for a week with my pledge class over spring break. Really looking forward to that!</p>
 				</div>
-				<div id="tv">
+				<hr>
+				<div id="momsart" class="item">
+					<h3>Evangelizing my Mom's Art</h3>
+					<br>
+					<p><img src="img/art.jpg" width="200px"/>My mom is very detail-oriented and is an artist. Though I got the detail-oriented genes from her, I definitely did not get the artistic talent part. She specializes in a special kind of art - Lippan Kaam or "Clay and Mirror Work". Lippan Kaam is a decorative art done by common people, mainly women, in the villages of Kutch, Gujarat. They make birds, trees, animals, peacocks, and human figures using a mixture of clay and camel dung. My mom makes it with a mixture of clays (thank god). The originality of this art lies in adding no color; instead, small, round, diamond shaped or triangle mirror pieces are used. I help her promote her work on the web using social media, because it turns out she's not very computer savvy (this is changing with her iPad). That said, check out her Facebook <a href="https://www.facebook.com/pages/Anjus-Art/358381340868886">page</a> and <a href="#contact">let me know</a> if you are interested in placing an order!</p>
+				</div>
+				<hr>
+				<div id="tv" class="item">
 					<h3>Watching TV</h3>
+					<br>
+					<p>I really like "deep" and powerful shows that put emphasis on character development. I think it is because I have taken a few acting/theater classes while at MIT and the part I enjoyed most in those classes involved character analysis, figuring out why characters do what they do, etc... Some of my favorite shows are <a href="http://www.hbo.com/the-sopranos/index.html">The Sopranos</a>, <a href="http://www.hbo.com/the-wire/index.html">The Wire</a>, <a href="http://www.amctv.com/shows/mad-men">Mad Men</a>, <a href="http://www.hbo.com/boardwalk-empire/index.html">Boardwalk Empire</a>, <a href="http://www.hbo.com/game-of-thrones/index.html">Game of Thrones</a>, and <a href="http://www.sho.com/site/californication/home.do">Californication</a>. Depending on my mood, I also really enjoy <a href="http://abc.go.com/shows/modern-family">Modern Family</a> - one of the most genuine comedies out there.</p>
 				</div>
-				<div id="reading">
+				<hr>
+				<div id="reading" class="item">
 					<h3>Reading</h3>
+					<br>
+					<p>I don't get a chance to read books as much as I'd like, but I am trying to change this. I am currently reading a highly recommended book called <a href="http://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1590597141">Founders at Work.</a> While I find it to be a little verbose at times, there are some great gems throughout the book which make the book worth it. In 2011, I discovered that Twitter is a phenomenal tool to keep up with what is going on in technology, startups, and the world at large. I read a lot through Twitter.</p>
 				</div>
 		 	</section>
 		
@@ -173,7 +273,7 @@
 					</h1>
 				</div>
 				<p>
-					I share stuff that catches my eye on Twitter (<a href="https://twitter.com/#!/drgarg">@drgarg</a>), push code on Github (<a href="https://github.com/dhruvg">dhruvg</a>), and try to act professional on LinkedIn (<a href="http://www.linkedin.com/in/dhruvgarg">dhruvgarg</a>). If you are into fancy resumes, here's <a href="docs/resume.pdf">mine</a>. I check my email pretty often, so feel free to get in touch at dhruv.garg at gmail dot com.
+					I share stuff that catches my eye on Twitter (<a href="https://twitter.com/#!/drgarg">@drgarg</a>), push code on Github (<a href="https://github.com/dhruvg">dhruvg</a>), and try to act professional on LinkedIn (<a href="http://www.linkedin.com/in/dhruvgarg">dhruvgarg</a>). If you are curious, you can see what I <a href="http://r0yalflu5h.wordpress.com">blogged</a> about in 2010 because I haven't blogged since. If you are into fancy resumes, here's <a href="docs/resume.pdf">mine</a>. I check my email pretty often, so feel free to get in touch at dhruv.garg at gmail dot com.
 				</p>
 				<br>
 				<div>
@@ -187,7 +287,7 @@
 			<hr>
 
       <footer>
-        <p>&copy; Dhruv Garg 2012</p>
+        <p>&copy; Dhruv Garg 2012 | <a href="https://github.com/dhruvg/personal-website">use this code</a></p>
       </footer>
 
     </div> <!-- /container -->
@@ -195,18 +295,5 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
   </body>
 </html>
