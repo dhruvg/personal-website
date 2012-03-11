@@ -90,13 +90,12 @@
 				<div class="page-header">
 					<h1>
 						Projects
-						<small>Things that I have made, am making, and want to make. <b>Descriptions coming soon.</b></small>
+						<small>Things that I have made, am making, and want to make.</small>
 					</h1>
 				</div>
 				<div class="subnav">
 					<ul class="nav nav-pills">
 						<li><a href="#beam">Beam</a></li>
-						<li><a href="#thesis">Relevance Ranking</a></li>
 						<li><a href="#google">Anomaly Analysis</a></li>
 						<li><a href="#kayak">Mobile Analytics</a></li>
 						<li><a href="#pokerbot">Pokerbot</a></li>
@@ -114,16 +113,7 @@
 						<small>Aug 2011 - Present</small>
 					</h3>
 					<br>
-					<p><img src="img/beam_logo.png" width="200px"/></p>
-				</div>
-				<hr>
-				<div id="thesis" class="item">
-					<h3>
-						Relevance Ranking for Tag-based Sharing
-						<small>Sep 2011 - Present</small>
-					</h3>
-					<br>
-					<p></p>
+					<p><img src="img/beam_logo.png" width="200px"/>Beam is the largest engineering project I have undertaken so far. Imagine for a second all the information you receive on a given day without specifically asking for it. This includes things like email from mailing lists, tweets on your Twitter feed, shares on your Facebook news feed, etc... Now, how much of this is noise to you, personally irrelevant to your goals and interests? For me, it is quite a high percentage. I believe it is a big enough problem for me, so I created Beam to solve it. Combating information overload is something that has been <a href="http://r0yalflu5h.wordpress.com/2009/08/08/information-overload-future/">on my mind</a> since 2009, but only now do I feel that I have the right timing, skills, and opportunity to take a stab at it. There are plenty of other hackers, startups, and big companies working on this and I am happy to see them validate the importance of this problem. If you are curious about the details, feel free to <a href="#contact">contact me</a> - I'd love to chat!</p>
 				</div>
 				<hr>
 				<div id="google" class="item">
@@ -132,7 +122,7 @@
 						<small>May 2011 - Aug 2011</small>
 					</h3>
 					<br>
-					<p><img src="img/youtube_logo.png" width="200px"/></p>
+					<p><img src="img/youtube_logo.png" style="padding-bottom: 90px;" width="200px"/>Google's Mountain View campus is like its own city. It is a pretty amazing place to work. You could probably also live there. I worked in the YouTube organization and my project involved finding anomalies in YouTube's incoming firehose of data. Every day YouTube partner managers look at a complicated dashboard of charts and figures which simply summarize and prettify the data YouTube collects about its partners' videos. Their lives would be easier if computers could figure out the notable attributes about incoming data (anomalies like "ad revenue was abnormally low today") and surface the same. I designed an unsupervised clustering algorithm which found these notable attributes. The more challenging part was integrating this service on top of Google's data storage infrastructure. It was important to design the pieces in a way where engineers could extend it and employ it within <i>any</i> team facing a similar need, not just YouTube. I was excited to push my code, which achieved those goals, to production in the final days of my internship!</p>
 				</div>
 				<hr>
 				<div id="kayak" class="item">
@@ -141,7 +131,7 @@
 						<small>Jan 2011 - Feb 2011</small>
 					</h3>
 					<br>
-					<p><img src="img/kayak_logo.jpeg" width="200px"/></p>
+					<p><img src="img/kayak_logo.jpeg" style="padding-bottom: 50px;" width="200px"/>I did an externship (basically a 1 month internship) at <a href="http://www.kayak.com">Kayak</a> during MIT's Independent Activities Period (IAP). It was in the Kayak Mobile team and my goal was to analyze all the logs Kayak collected and find interesting patterns/trends. I'd never done analytics-type stuff before, so this served as a good intro. My first week on the job, I wrote a Hive query (a SQL-like query which runs a MapReduce job in the back) which ate up all the CPU, preventing anyone else from running their queries. I guess that was one way to get noticed ;) Tricks to make SQL queries efficient is something I learned at Kayak. I also setup a dashboard using Python/Django for the front-end, so that useful data could be parsed and analyzed automatically using cron + Hive + Hadoop, and anyone could visualize the results using the dashboard. Unfortunately, I can't share the interesting patterns I found, but I was amazed by how insightful and ultimately useful data analysis can be.</p>
 				</div>
 				<hr>
 				<div id="pokerbot" class="item">
@@ -159,7 +149,7 @@
 						<small>May 2010 - Aug 2010</small>
 					</h3>
 					<br>
-					<p><img src="img/apple_icloud_logo.jpg" style="padding-bottom: 20px;" width="200px"/>Interning at Apple was an amazing experience for a few reasons: My mentor was a baller when it came to designing software and more importantly, he was a great teacher. I learned a lot about how to write efficient, clean, and modular server-side code. Second, I worked with another intern who was one year senior to me studying CS at Brown. He was very knowledgable and had taken more advanced classes, so I learned a lot from him. Plus, as a duo, we could tackle bigger problems throughout the summer. Our project involved making MobileMe (now iCloud) search better. Think "<a href="http://en.wikipedia.org/wiki/Spotlight_(software)">Spotlight</a>" but for all your personal stuff on the cloud. We focused primarily on the backend piece which involved migrating from an older version of Lucene, understanding and gluing together all the search silos (Documents, Photos, Blogs, etc...) into a single interface, and writing a migration tool to ensure that the server can transition smoothly to the new design without breaking existing functionality. We made a working demo for our MobileMe accounts and were selected as one of < 10 teams out of ~100 interns to present our project to the VP of Internet Services, <a href="http://www.apple.com/pr/bios/eddy-cue.html">Eddy Cue</a>.</p>
+					<p><img src="img/apple_icloud_logo.jpg" style="padding-bottom: 20px;" width="200px"/>Interning at Apple was an amazing experience for a few reasons: My mentor was a baller when it came to designing software and more importantly, he was a great teacher. I learned a lot about how to write efficient, clean, and modular server-side code. Second, I worked with another intern who was one year senior to me studying CS at Brown. He was very knowledgable and had taken more advanced classes, so I learned a lot from him. Plus, as a duo, we could tackle bigger problems throughout the summer. Our project involved making MobileMe (now <a href="http://www.apple.com/icloud/">iCloud</a>) search better. Think "<a href="http://en.wikipedia.org/wiki/Spotlight_(software)">Spotlight</a>" but for all your personal stuff on the cloud. We focused primarily on the backend piece which involved migrating from an older version of Lucene, understanding and gluing together all the search silos (Documents, Photos, Blogs, etc...) into a single interface, and writing a migration tool to ensure that the server can transition smoothly to the new design without breaking existing functionality. We made a working demo for our MobileMe accounts and were selected as one of < 10 teams out of ~100 interns to present our project to the VP of Internet Services, <a href="http://www.apple.com/pr/bios/eddy-cue.html">Eddy Cue</a>.</p>
 				</div>
 				<hr>
 				<div id="medialab" class="item">
